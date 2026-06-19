@@ -1,15 +1,13 @@
-import React from 'react'
-
 const Footer = () => {
   return (
-    <footer className="py-12 text-center ">
-      <span className='px-3 py-1 rounded-lg bg-black text-white font-light text-[14px] pb-1.5'><a href="https://drive.google.com/file/d/1F3NIL_aGvc_x0qj4kaTsUVz70iCLPFJD/view?usp=drive_link">Resume</a></span>
-      <div className='mt-4 text-5xl font-bold'>Get in Touch</div>
-      <div className='mt-3 text-xl text-gray-500 font-light'>Just shoot me a dm with a direct question on <a className='text-blue-500' target='_blank' href="https://x.com/adityasengar_in">twitter/X.</a></div>
+    <footer className="px-5 py-14 text-center sm:px-8 sm:py-16">
+      <a className='inline-block rounded-lg bg-black px-3 py-1 pb-1.5 text-[14px] font-light text-white dark:bg-white dark:text-black' target='_blank' rel='noreferrer' href="https://drive.google.com/file/d/1F3NIL_aGvc_x0qj4kaTsUVz70iCLPFJD/view?usp=drive_link">Resume</a>
+      <div className='mt-4 text-4xl font-bold tracking-tight sm:text-5xl'>Get in Touch</div>
+      <div className='mx-auto mt-3 max-w-2xl text-base font-light leading-relaxed text-gray-500 sm:text-xl dark:text-zinc-400'>Just shoot me a dm with a direct question on <a className='text-blue-500 dark:text-blue-400' target='_blank' rel='noreferrer' href="https://x.com/adityasengar_in">twitter/X.</a></div>
       <p className="text-zinc-500 text-sm mt-8">
         © {new Date().getFullYear()} Aditya Sengar
       </p>
-      <div className='h-25 w-100%'></div>
+      <div className='h-20 sm:h-24'></div>
     </footer>
   )
 }

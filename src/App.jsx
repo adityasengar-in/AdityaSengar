@@ -1,5 +1,3 @@
-import { useState } from 'react'
-import { createRoot } from 'react-dom/client'
 import { RouterProvider , createBrowserRouter, createRoutesFromElements, Route } from 'react-router-dom'
 import Layout from './Layout'
 import Landing from './pages/Landing'

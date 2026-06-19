@@ -6,6 +6,7 @@ export default function DotGrid() {
 
   useEffect(() => {
     const canvas = ref.current;
+    const animationState = dataRef.current;
     const ctx = canvas.getContext("2d");
     const W = canvas.offsetWidth;
     const H = canvas.offsetHeight;
@@ -16,7 +17,6 @@ export default function DotGrid() {
 
     const spacing = 6;
     const radius = 1;
-    const cx = W / 2, cy = H / 2;
 
     // Create dot objects with position and opacity
     const dots = [];
@@ -32,7 +32,7 @@ export default function DotGrid() {
       }
     }
 
-    dataRef.current.dots = dots;
+    animationState.dots = dots;
 
     // Animation loop
     const animate = () => {
@@ -56,15 +56,15 @@ export default function DotGrid() {
         ctx.fill();
       });
 
-      dataRef.current.animationId = requestAnimationFrame(animate);
+      animationState.animationId = requestAnimationFrame(animate);
     };
 
     animate();
 
     // Cleanup
     return () => {
-      if (dataRef.current.animationId) {
-        cancelAnimationFrame(dataRef.current.animationId);
+      if (animationState.animationId) {
+        cancelAnimationFrame(animationState.animationId);
       }
     };
   }, []);
@@ -77,6 +77,7 @@ export default function DotGrid() {
           inset: 0,
           width: "100%",
           height: "100px",
+          pointerEvents: "none",
           maskImage: "linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 40px, rgba(0,0,0,0) 100px)",
           WebkitMaskImage: "linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 40px, rgba(0,0,0,0) 100px)",
         }}

@@ -1,5 +1,3 @@
-import React from 'react'
-
 const skills = [
     { name: "HTML", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" },
     { name: "CSS", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" },
@@ -14,8 +12,8 @@ const skills = [
     { name: "Postgres", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" },
     { name: "MongoDB", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" },
     { name: "Git", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" },
-    { name: "GitHub", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" },
-    { name: "Vercel", icon: "https://www.svgrepo.com/show/327408/logo-vercel.svg" },
+    { name: "GitHub", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg", invertInDark: true },
+    { name: "Vercel", icon: "https://www.svgrepo.com/show/327408/logo-vercel.svg", invertInDark: true },
     { name: "Python", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" },
     { name: "C", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" },
     { name: "C++", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" },
@@ -26,7 +24,7 @@ const skills = [
 
 const Skills = () => {
   return (
-    <div className='px-45 pt-15'>
+    <section className='mx-auto max-w-4xl px-5 pt-14 sm:px-8 sm:pt-16'>
         <div className='text-xl mb-2 font-bold'>
             Skills
         </div>
@@ -34,14 +32,14 @@ const Skills = () => {
             {skills.map((skill) => (
             <div
                 key={skill.name}
-                className="flex items-center gap-2 px-3 py-1.5 rounded-full border border-gray-200 text-sm text-gray-800"
+                className="flex items-center gap-2 rounded-full border border-gray-200 px-3 py-1.5 text-sm text-gray-800 transition-colors dark:border-zinc-800 dark:bg-zinc-900/60 dark:text-zinc-200"
             >
-                <img src={skill.icon} alt={skill.name} className="w-4 h-4" />
+                <img src={skill.icon} alt={skill.name} className={`size-4 ${skill.invertInDark ? "dark:invert" : ""}`} />
                 {skill.name}
             </div>
             ))}
         </div>
-    </div>
+    </section>
   )
 }
 
