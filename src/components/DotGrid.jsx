@@ -27,7 +27,7 @@ export default function DotGrid() {
           y,
           alpha: Math.random() * 0.7,
           targetAlpha: Math.random() * 0.7,
-          speed: Math.random() * 0.08 + 0.02, // How fast opacity changes
+          speed: Math.random() * 0.08 + 0.2, // How fast opacity changes
         });
       }
     }
