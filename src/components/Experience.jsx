@@ -16,7 +16,7 @@ const Experience = () => {
                     <div>
                         <div className='flex flex-col justify-center pt-2'>
                             <div className='font-medium text-[15px]'>Meetkats</div>
-                            <div className='text-[14px] font-light text-gray-600 dark:text-zinc-400'>UI & Frontend Intern</div>
+                            <div className='text-[14px] font-light text-gray-600 dark:text-zinc-400'>Product Design & Frontend Intern</div>
                         </div>
                     </div>
                 </div>

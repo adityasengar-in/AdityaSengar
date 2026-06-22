@@ -1,4 +1,3 @@
-// Navbar.jsx
 import { useEffect, useRef, useState } from "react";
 
 const BASE = 44;
