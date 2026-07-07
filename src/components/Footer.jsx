@@ -1,7 +1,7 @@
 const Footer = () => {
   return (
     <footer className="px-5 py-14 text-center sm:px-8 sm:py-16">
-      <a className='inline-block rounded-lg bg-black px-3 py-1 pb-1.5 text-[14px] font-light text-white dark:bg-white dark:text-black' target='_blank' rel='noreferrer' href="https://drive.google.com/file/d/1F3NIL_aGvc_x0qj4kaTsUVz70iCLPFJD/view?usp=drive_link">Resume</a>
+      <a className='inline-block rounded-lg bg-black px-3 py-1 pb-1.5 text-[14px] font-light text-white dark:bg-white dark:text-black' target='_blank' rel='noreferrer' href="https://drive.google.com/file/d/1NXLbNogFX2KKgBbzSGU4EA91nX02gQHz/view?usp=sharing">Resume</a>
       <div className='mt-4 text-4xl font-bold tracking-tight sm:text-5xl'>Get in Touch</div>
       <div className='mx-auto mt-3 max-w-2xl text-base font-light leading-relaxed text-gray-500 sm:text-xl dark:text-zinc-400'>Just shoot me a dm with a direct question on <a className='text-blue-500 dark:text-blue-400' target='_blank' rel='noreferrer' href="https://x.com/adityasengar_in">twitter/X.</a></div>
       <p className="text-zinc-500 text-sm mt-8">
