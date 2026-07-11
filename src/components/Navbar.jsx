@@ -95,7 +95,7 @@ export default function Navbar() {
             GitHub
           </span>
           <a
-            href="https://github.com/AdityaSengar25"
+            href="https://github.com/adityasengar-in"
             target="_blank"
             rel="noreferrer"
             ref={(el) => (refs.current[2] = el)}
