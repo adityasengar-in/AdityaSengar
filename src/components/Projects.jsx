@@ -63,7 +63,7 @@ const Projects = () => {
               </div>
             </article>
           </a>
-          <a className='block h-full' href="https://travello-site.vercel.app/" target='_blank' rel='noreferrer'>
+          <a className='block h-full' href="https://travelo-aditya.vercel.app/" target='_blank' rel='noreferrer'>
             <article className='flex h-full flex-col overflow-hidden rounded-xl border border-gray-200 text-left transition-colors dark:border-zinc-800 dark:bg-zinc-900/40'>
               <div>
               <img className='aspect-[16/10] w-full border-b border-gray-200 object-cover dark:border-zinc-800' src={travelloImg} alt="Travello preview" />
